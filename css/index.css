@@ -1,0 +1,534 @@
+        *{
+            margin:0;
+            padding:0;
+        }
+        a{
+            text-decoration: none;
+        }
+        li,ul li{
+            list-style: none;
+        }
+
+        body{
+            /*background: url("../images/main.jpg") no-repeat fixed center;*/
+            background-size:cover;
+            background-color: #fff;
+        }
+
+        ul li{
+            float: left;
+            position:relative;
+        }
+
+        .nav{
+            position: fixed;
+            top:0;
+            left: 0;
+            z-index: 10;
+            color:#fff;
+            width: 100%;
+            height:60px;
+            margin:0 auto;
+            box-shadow:0 3px 5px 2px rgba(0,0,0,0.4),0 2px 10px rgba(0,0,0,0.1) !important;
+            box-sizing: border-box;
+            background: url("../images/nav-bg.jpg");
+
+        }
+        .nav img{
+            width:50px;
+            margin-top:10px;
+            margin-left: 50px;
+            margin-right:30px;
+
+        }
+        .nav .logo-s{
+            display: inline-block;
+            line-height:50px;
+            font-size: 25px;
+            margin-top:5px;
+            vertical-align: top;
+        }
+
+        .nav:after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        ul {
+            float:right;
+            list-style:none;
+
+        }
+        .nav a{
+            color:inherit;
+            font-size:18px;
+            width: 80px;
+            height: 60px;
+            line-height:60px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .singer-more a{
+            border-top: 1px solid #fff;
+        }
+        .song-more a{
+            border-top: 1px solid #fff;
+        }
+        
+        .nav a:hover{
+            background-color: rgba(0,0,0,0.5);
+            
+        }
+
+        .singer-more{
+            position:absolute;
+            top: 60px;
+            left: 0;
+            z-index:10;
+            background-color: #684026;
+            display: none;
+
+        }
+
+        .song-more{
+            position:absolute;
+            top: 60px;
+            left: 0;
+            z-index:10;
+            background-color: #684026;
+            display: none;
+
+        }
+
+        .nav li:hover .singer-more{
+            display: block;
+        }
+
+        .nav li:hover .song-more{
+            display: block;
+        }
+
+
+
+        .main:after{
+            content: " ";
+            display: block;
+            clear: both;
+
+        }
+
+        .show-p{
+            margin:70px auto;
+            background: url("../images/nav-bg.jpg");
+        }
+        /*.content{*/
+            /*width: 65%;*/
+            /*margin-left:5%;*/
+            /*background-color: #81ffee;*/
+        /*}*/
+
+        /*.aside{*/
+            /*width: 20%;*/
+            /*margin-right:5%;*/
+            /*float:right;*/
+            /*background-color: #ff837d;*/
+        /*}*/
+
+        #container {
+            border-radius: 10px;
+            margin:0 auto;
+            box-sizing: border-box;
+            position: relative;
+            width: 1300px;
+            height: 800px;
+            border: 3px solid #333;
+            overflow: hidden;
+            margin-bottom:-60px;
+        }
+        #list {
+            position: absolute;
+            z-index: 1;
+            width: 9100px;
+            height: 800px;
+        }
+        #list img {
+            float: left;
+            width: 1300px;
+            height:  800px;
+        }
+        #buttons {
+            position: absolute;
+            left: 250px;
+            bottom: 20px;
+            z-index: 2;
+            height: 10px;
+            width: 100px;
+        }
+        #buttons span {
+            float: left;
+            margin-right: 5px;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            background: #333;
+            cursor: pointer;
+        }
+        #buttons .on {
+            background: orangered;
+        }
+        .arrow {
+            position: absolute;
+            top: 300px;
+            z-index: 2;
+            display: none;
+            width: 40px;
+            height: 100px;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 100px;
+            text-align: center;
+            color: #fff;
+            background-color: RGBA(0, 0, 0, .3);
+            cursor: pointer;
+        }
+        .arrow:hover {
+            /*background-color: RGBA(0, 0, 0, .5);*/
+            background-color: #684026;
+        }
+        #container:hover .arrow {
+            display: block;
+        }
+        #prev {
+            left: 20px;
+        }
+        #next {
+            right: 20px;
+        }
+
+
+
+        #login{
+            width: 350px;
+            height: 250px;
+            border: 1px solid #ccc;
+            position: absolute;
+            display: none;
+            background: #fff;
+            z-index: 9999;
+        }
+
+        #login h2{
+            height: 40px;
+            line-height:40px;
+            text-align: center;
+            font-size:14px;
+            letter-spacing: 1px;
+            color: #666666;
+            /*background: ;*/
+            border-bottom:1px solid #ccc;
+            margin:0 0 20px 0;
+            cursor:move;
+        }
+
+        #login .close{
+            float:right;
+            position: relative;
+            top:14px;
+            right:8px;
+            cursor: pointer;
+        }
+        #login .user{
+            text-align: center;
+            font-size:14px;
+            margin-top:10px;
+            margin-bottom: 20px;
+        }
+        .user input{
+            width: 200px;
+            height: 25px;
+        }
+        #login .pass{
+            text-align: center;
+            font-size:14px;
+            margin-bottom: 10px;
+        }
+        .pass input{
+            width: 200px;
+            height: 25px;
+        }
+        #login .button{
+            text-align: center;
+
+        }
+        .button input{
+            border:none;
+            width: 107px;
+            height: 30px;
+            /*background: url(../images/login_button.png) no-repeat;*/
+            margin-top: 15px;
+            margin-bottom:10px;
+        }
+        #login .other{
+            text-decoration: none;
+            margin-top:15px;
+            margin-right:10px;
+            text-align: right;
+        }
+        #screen{
+            position: absolute;
+            top:0;
+            left: 0;
+            background: #000;
+            z-index: 9998;
+            opacity:0.3;
+            display: none;
+
+        }
+        #reg {
+            width:600px;
+            height:550px;
+            border:1px solid #ccc;
+            position:absolute;
+            display:none;
+            z-index:9999;
+            background:#fff;
+        }
+        #reg h2 {
+            height:40px;
+            line-height:40px;
+            text-align:center;
+            font-size:14px;
+            letter-spacing:1px;
+            color:#666;
+            background:url(../images/login_header.png) repeat-x;
+            margin:0;
+            padding:0;
+            border-bottom:1px solid #ccc;
+            margin:0 0 20px 0;
+            cursor:move;
+        }
+        #reg h2 img {
+            float:right;
+            position:relative;
+            top:14px;
+            right:8px;
+            cursor:pointer;
+        }
+        #reg dl {
+            font-size:14px;
+            color:#666;
+            margin:20px;
+            padding:0 0 0 10px;
+            position:relative;
+        }
+        #reg dl dd {
+            height:30px;
+            padding:5px 0;
+        }
+        #reg dl dd input.text, #reg dl dd select {
+            width:200px;
+            height:25px;
+            border:1px solid #ccc;
+            background:#fff;
+            font-size:14px;
+            color:#666;
+        }
+        #reg dl dd select {
+            width:202px;
+        }
+        #reg dl dd.birthday select {
+            width:70px;
+        }
+        #reg dl dd textarea {
+            width:360px;
+            height:100px;
+            background:#fff;
+            border:1px solid #ccc;
+        }
+        #reg dl dd.ps {
+            padding:0 0 0 300px;
+        }
+        #reg dl dd.ps strong.num {
+            padding:0 2px;
+        }
+        #reg dl dd.ps span.clear {
+            color:#06f;
+            cursor:pointer;
+        }
+        #reg dl dd input.submit {
+            width:143px;
+            height:33px;
+            background:url(../images/reg.png) no-repeat;
+            border:none;
+            cursor:pointer;
+        }
+        #reg dl dd span.info, #reg dl dd span.error, #reg dl dd span.succ {
+            display:block;
+            font-size:12px;
+            color:#333;
+            width:165px;
+            height:32px;
+            line-height:32px;
+            padding:0 0 0 35px;
+            position:absolute;
+            letter-spacing:1px;
+            display:none;
+        }
+
+        #reg dl dd span.info {
+            background:url(../images/reg_info.png) no-repeat;
+        }
+        #reg dl dd span.error {
+            background:url(../images/reg_error.png) no-repeat;
+        }
+        #reg dl dd span.succ {
+            height:14px;
+            line-height:14px;
+            background:url(../images/reg_succ.png) no-repeat;
+            padding:0 0 0 20px;
+            color:green;
+        }
+        #reg dl dd span.info_user {
+            height:43px;
+            line-height:18px;
+            padding-top:7px;
+            background:url(../images/reg_info2.png) no-repeat;
+            top:3px;
+            left:295px;
+        }
+        #reg dl dd span.error_user {
+            top:3px;
+            left:295px;
+        }
+        #reg dl dd span.succ_user {
+            top:12px;
+            left:295px;
+        }
+        #reg dl dd span.info_pass {
+            width:244px;
+            height:102px;
+            padding:4px 0 0 16px;
+            background:url(../images/reg_info3.png) no-repeat;
+            top:5px;
+            left:295px;
+            letter-spacing:0;
+        }
+        #reg dl dd span.info_pass p {
+            height:25px;
+            line-height:25px;
+            color:#666;
+        }
+        #reg dl dd span.info_pass p strong.s {
+            color:#ccc;
+        }
+        #reg dl dd span.error_pass {
+            top:43px;
+            left:295px;
+        }
+        #reg dl dd span.succ_pass {
+            top:52px;
+            left:295px;
+        }
+        #reg dl dd span.info_notpass {
+            top:83px;
+            left:295px;
+        }
+        #reg dl dd span.error_notpass {
+            top:83px;
+            left:295px;
+        }
+        #reg dl dd span.succ_notpass {
+            top:92px;
+            left:295px;
+        }
+        #reg dl dd span.info_ans {
+            top:163px;
+            left:295px;
+        }
+        #reg dl dd span.error_ans {
+            top:163px;
+            left:295px;
+        }
+        #reg dl dd span.succ_ans {
+            top:172px;
+            left:295px;
+        }
+        #reg dl dd span.info_email {
+            top:203px;
+            left:295px;
+        }
+        #reg dl dd span.error_email {
+            top:203px;
+            left:295px;
+        }
+        #reg dl dd span.succ_email {
+            top:212px;
+            left:295px;
+        }
+        #reg dl dd span.error_ques {
+            top:123px;
+            left:295px;
+        }
+        #reg dl dd span.error_birthday {
+            top:241px;
+            left:350px;
+        }
+        #reg dl dd ul.all_email {
+            width:180px;
+            height:130px;
+            background:#fff;
+            padding:5px 10px;
+            position:absolute;
+            top:233px;
+            left:87px;
+            border:1px solid #ccc;
+            display:none;
+        }
+        #reg dl dd ul.all_email li {
+            height:25px;
+            line-height:25px;
+            border-bottom:1px solid #e5edf2;
+            padding:0 5px;
+            cursor:pointer;
+        }
+
+        .footer{
+            position: fixed;
+            bottom:0;
+            z-index: 0;
+            font-size: 18px;
+            color:white;
+            width: 100%;
+            height: 60px;
+            margin-top:30px;
+            border-top:1px solid black;
+            background: url("../images/nav-bg.jpg");
+            /*padding: 5px;*/
+            box-sizing: border-box;
+            box-shadow:5px 0 5px 4px rgba(0,0,0,0.4),2px 0px 10px rgba(0,0,0,0.1) !important;
+        }
+        .footer span{
+            /*display: inline-block;*/
+            line-height:60px;
+            padding-left: 3%;
+        }
+
+        .footer-right{
+            float:right;
+            line-height:60px;
+            padding-right: 3%;
+        }
+
+        .footer-right a{
+            color:white;
+
+        }
+
+
+
+
+

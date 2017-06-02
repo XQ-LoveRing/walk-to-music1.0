@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="http://www.softwhy.com/"/>
+    <link rel="stylesheet" href="./css/songs.css">
+    <title>songs</title>
+    <style>
+        .unfold, .pack {
+            display: none;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            var box = $('#antzone').text();
+
+            function cutText() {
+                if (box.length > 30) {
+                    $('.unfold').show();
+                    $('#antzone').text(box.substr(0, 30) + "...");
+                }
+                ;
+            };
+            cutText();
+            $('.unfold').click(function () {
+                $('#antzone').text(box);
+                $(this).hide();
+                $('.pack').show();
+            });
+            $('.pack').click(function () {
+                cutText();
+                $(this).hide();
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div id="nav" class="nav">
+    <div class="nav-right">
+        <ul>
+            <li><a href="%20index.html">首页</a></li>
+            <li>
+                <a href="singer.html">歌手</a>
+                <div class="singer-more">
+                    <a href="#">大陆</a>
+                    <a href="#">港台</a>
+                    <a href="#">欧美</a>
+                    <a href="#">日韩</a>
+                </div>
+            </li>
+
+            <li>
+                <a href="#">歌曲</a>
+                <div class="song-more">
+                    <a href="#">汉语</a>
+                    <a href="#">英语</a>
+                    <a href="#">粤语</a>
+                    <a href="#">日韩</a>
+                </div>
+            </li>
+            <!-- <li><a class="login" href="#">登录</a></li> -->
+            <!-- <li><a class="reg" href="#">注册</a></li> -->
+
+        </ul>
+    </div>
+
+    <div class="nav-left">
+        <img src="images/logo_meitu_1.jpg" alt="">
+        <h1 class="logo-s">Walk Into Music</h1>
+    </div>
+</div>
+<div class="main">
+    <div class="box">
+        <img src="images/song-pic/我醒着做梦.jpg" alt="">
+        <h3>我醒着做梦</h3>
+        <p id="antzone">
+            看你熟睡時的笑容 以為愛很單純 以為就憑那些浪漫傻事 過一生也夠用
+                         可現實像鬧鐘 吵醒了同床的異夢<br>
+            我醒著做夢 就是痛也痛得感動<br>
+            誓言像夢話 那就留在夢裡背誦<br>
+            只有在夢中 哪怕喊破喉嚨<br>
+            說你永遠是原來的你 你無動於衷<br>
+            以為兩個人的天空 雨過後就有彩虹<br>
+            以為世界圍繞我倆轉動 在愛裡沒有惶恐<br>
+            我裝得 那麼像 只希望時間會寬容<br>
+
+            我醒著做夢 就是痛也痛得感動<br>
+            誓言像夢話 那就留在夢裡背誦<br>
+            只有在夢中 哪怕喊破喉嚨<br>
+            說你永遠是原來的你 你無動於衷<br>
+
+            就是做夢我也不相信 在烈日當空<br>
+            所有感情會無影無蹤<br>
+
+            我醒著做夢 就是痛也痛得懵懂<br>
+            誓言像夢話 那就留在夢裡背誦<br>
+            只有在夢中 哪怕喊破喉嚨<br>
+            說我永遠是原來的我<br>
+            我醒著做夢<br>
+            我醒著做夢<br>
+        </p>
+        <span class="unfold">展开</span>
+        <span class="pack">收起</span>
+    </div>
+    <!--<div class="box">-->
+        <!--<img src="images/song-pic/我醒着做梦.jpg" alt="">-->
+        <!--<h3>沉默是金</h3>-->
+        <!--<p id="antzone">-->
+            <!--夜风凛凛 独回望旧事前尘-->
+            <!--是以往的我 充满怒愤-->
+            <!--诬告与指责积压着满肚气不愤-->
+            <!--对谣言反应 甚为着紧-->
+
+            <!--受了教训 得了书经的指引-->
+            <!--现已看得透 不再自困-->
+            <!--但觉有分数-->
+            <!--不再像以往那般笨-->
+            <!--抹泪痕轻快笑着行-->
+            <!--冥冥中都早注定你富或贫-->
+            <!--是错永不对真永是真-->
+            <!--任你怎说安守我本份-->
+            <!--始终相信沉默是金-->
+            <!--是非有公理 慎言莫冒犯别人-->
+            <!--遇上冷风雨休太认真-->
+            <!--自信满心里 休理会讽刺与质问-->
+            <!--笑骂由人 洒脱地做人-->
+
+            <!--受了教训 得了书经的指引-->
+            <!--现已看得透 不再自困-->
+            <!--但觉有分数-->
+            <!--不再像以往那般笨-->
+            <!--抹泪痕轻快笑着行-->
+            <!--冥冥中都早注定你富或贫-->
+            <!--是错永不对真永是真-->
+            <!--任你怎说安守我本份-->
+            <!--始终相信沉默是金-->
+            <!--是非有公理 慎言莫冒犯别人-->
+            <!--遇上冷风雨休太认真-->
+            <!--自信满心里 休理会讽刺与质问-->
+            <!--笑骂由人 洒脱地做人-->
+            <!--少年人 洒脱地做人-->
+            <!--继续行 洒脱地做人-->
+            <!--少年人 洒脱地做人-->
+            <!--少年人 洒脱地做人-->
+            <!--继续行 洒脱地做人-->
+            <!--继续行 洒脱地做人-->
+            <!--少年人 洒脱地做人-->
+            <!--继续行 洒脱地做人-->
+            <!--少年人 洒脱地做人-->
+            <!--继续行 洒脱地做人-->
+        <!--</p>-->
+        <!--<span class="unfold">展开</span>-->
+        <!--<span class="pack">收起</span>-->
+    <!--</div>-->
+
+</div>
+<div class="footer">
+    <span>Copyright © lxq</span>
+    <!--<audio class="music" src="music/我醒着做梦.mp3" autoplay="autoplay" loop="loop" controls="controls"> </audio>-->
+    <div class="footer-right">
+        <a href="">联系我们</a>
+        <span>|</span>
+        <a href="">加入我们</a>
+    </div>
+</div>
+</body>
+</html>
